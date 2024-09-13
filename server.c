@@ -62,7 +62,7 @@ void* server(void* arg)
     // {
         if(port == 6321)
         {
-            int frequency = 1;
+            int frequency = 200;
             clientsocket=accept(serversocket,(struct sockaddr*)&clientaddr,&addr_size);
             if(clientsocket<0)
             {
