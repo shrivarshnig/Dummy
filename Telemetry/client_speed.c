@@ -102,9 +102,9 @@ int main() {
         double expected_time = (double)total_bytes_received / target_rate_bps;
 
         // Sleep if we have exceeded the expected time
-        // if (elapsed_seconds < expected_time) {
-        //     usleep((useconds_t)((expected_time - elapsed_seconds) * 1e6));
-        // }
+        if (elapsed_seconds < expected_time) {
+            usleep((useconds_t)((expected_time - elapsed_seconds) * 1e6));
+        }
     }
 
     printf("Received %ld bytes at approximately %ld Mbps.\n", total_bytes_received, TARGET_RATE_MBPS);
