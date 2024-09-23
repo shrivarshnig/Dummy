@@ -36,7 +36,7 @@ void send_data(int conn) {
         //     double expected_time = (double)total_bytes_sent / target_rate_bps;
         //     usleep((useconds_t)((expected_time - elapsed_seconds) * 1e6));
         // }
-        printf("%s\n",buffer);
+        printf("%s-%ld\n",buffer, total_bytes_sent);
         
     }
 
