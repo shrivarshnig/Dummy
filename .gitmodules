@@ -1,0 +1,3 @@
+[submodule "server_multifreq_final"]
+	path = server_multifreq_final
+	url = https://github.com/shrivarshnig/Telemetry.git
